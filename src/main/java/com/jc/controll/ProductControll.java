@@ -49,4 +49,9 @@ public class ProductControll {
 		productService.update(pname, price, pimage, pid);
 		return "forward:findAll";
 	}
+	@RequestMapping("update2")
+	public String update2(String pname,double price,String pimage,int pid){
+		productService.update(pname, price, pimage, pid);
+		return "forward:findAll";
+	}
 }
